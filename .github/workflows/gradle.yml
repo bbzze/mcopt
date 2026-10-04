@@ -52,6 +52,6 @@ jobs:
     - name: Upload a Build Artifact
       uses: actions/upload-artifact@v7.0.1
       with:
-        name: name
-        path: build/libs
+        name: build
+        path: build
   

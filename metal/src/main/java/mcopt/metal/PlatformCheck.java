@@ -49,7 +49,7 @@ final class PlatformCheck {
 			return null; // unknown version string: let it try rather than block a working Mac
 		}
 		// A JDK built against an older SDK may see macOS 26 as "16.x" (Apple's compatibility numbering); there was no macOS 16.
-		if (major < 26 && major != 16) return "It needs macOS 26 or later, and this Mac runs macOS " + version + ". Update macOS in System Settings > General > Software Update.";
+		if (major < 18 && major != 16) return "It needs macOS 26 or later, and this Mac runs macOS " + version + ". Update macOS in System Settings > General > Software Update.";
 		return null;
 	}
 }

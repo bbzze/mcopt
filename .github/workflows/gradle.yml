@@ -50,9 +50,8 @@ jobs:
     #   run: gradle build
 
     - name: Upload a Build Artifact
-  uses: actions/upload-artifact@v7.0.1
-  with:
-    name: name
-    path: build/libs
-    archive: false
+      uses: actions/upload-artifact@v7.0.1
+      with:
+        name: name
+        path: build/libs
   

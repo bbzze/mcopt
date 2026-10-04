@@ -23,6 +23,12 @@ jobs:
       contents: read
 
     steps:
+    - name: Install Clang
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y clang
+
+    
     - uses: actions/checkout@v4
     - name: Set up JDK 25
       uses: actions/setup-java@v4

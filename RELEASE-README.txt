@@ -36,5 +36,6 @@ To check it's working: press F3 (fn + F3 on a Mac keyboard); the bottom right sa
 The first launch writes config/mcopt.properties in your game folder (in Prism, the instance's minecraft/config
 folder); profile=none there turns the perf profile off.
 To switch mcopt's renderer off, add mcopt.metal=false to that file (or launch with -Dmcopt.metal=false).
+To hide the fps counter, add mcopt.fps=false to that file.
 
 Licence: Apache-2.0 (LICENSE, NOTICE).
